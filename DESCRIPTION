@@ -3,10 +3,12 @@ Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
     person("Johnny", "Wilkens", , "jwilkens@wesleyan.edu", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           )
+Description: This package is designed to measure the correlation between a 
+  specified variable and any number of additional variables. It consists of 
+  the core ryx() function to generate correlations as well as generic print, 
+  summary, and plot functions to display the output.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
