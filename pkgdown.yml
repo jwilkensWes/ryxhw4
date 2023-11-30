@@ -1,0 +1,10 @@
+pandoc: 2.19.2
+pkgdown: 2.0.7
+pkgdown_sha: ~
+articles:
+  ryxhw4: ryxhw4.html
+last_built: 2023-11-30T09:40Z
+urls:
+  reference: https://jwilkenswes.github.io/ryxhw4/reference
+  article: https://jwilkenswes.github.io/ryxhw4/articles
+
