@@ -1,3 +1,21 @@
+#' @title ryx
+#' @description Create correlation measure between two or more variables
+#' @param data Dataframe containing variables
+#' @param y Variable to measure correlations against
+#' @param x Variable(s) to test against y
+#' @return A list of length 3. 1. The y variables. 2. The x variable(s). 3. A dataframe containing the correlation measures with significance checks.
+#' @details
+#' @examples
+#' \dontrun{
+#' if(interactive()){
+#'  #EXAMPLE1
+#'  library(MASS)
+#'  x <- ryx(Boston, y = "medv")
+#'  }
+#' }
+#' @rdname ryx
+#' @export
+
 ryx <- function(data, y, x){
   if(missing(x)){
     x <- names(data)[sapply(data, class)=="numeric"]

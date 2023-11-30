@@ -1,3 +1,19 @@
+#' @title summary.ryx
+#' @description Generic summary function specified for the ryx() function
+#' @param x The output of ryx()
+#' @param ... Any additional passed arguments
+#' @return A summary of the output of the ryx() function in words.
+#' @details DETAILS
+#' @examples
+#' \dontrun{
+#' if(interactive()){
+#'  #EXAMPLE1
+#'  summary(x)
+#'  }
+#' }
+#' @rdname summary.ryx
+#' @export
+
 summary.ryx <- function(x, ...){
   if(!inherits(x, "ryx")) stop("Must be class ryx")
   y = x$y
