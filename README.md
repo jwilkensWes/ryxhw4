@@ -1,6 +1,8 @@
 
 # ryxhw4
 
+<img src="star.jpg" width="200"/>
+
 <!-- badges: start -->
 <!-- badges: end -->
 
@@ -8,7 +10,7 @@ The goal of ryxhw4 is to easily calculate and display correlations between varia
 
 ## Installation
 
-You can install the development version of ryxhw4 like so:
+You can install the development version of ryxhw4 with:
 
 ``` r
 remotes::install_github("jwilkensWes/ryxhw4")
