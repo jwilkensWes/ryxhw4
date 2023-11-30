@@ -1,0 +1,63 @@
+---
+title: "ryxhw4"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ryxhw4}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(ryxhw4)
+```
+
+
+# Introduction
+
+This package contains useful functions to calculate the correlation between two or more variables. It was created as part of a homework assignment for QAC356.
+
+# Functions
+
+The package has 4 functions. One core function ryx() and 3 generic S3 functions (print.ryx(), summary.ryx(), and plot.ryx()) to display the output of the core function.
+
+## ryx()
+
+The ryx function is the core of this package. It takes a dataframe and specified variables and calculates the correlations between the variables. The function returns a list of 3 containing the variables used and a dataframe of the correlation results.
+
+```{r}
+data(mtcars)
+x <- ryx(mtcars, y = "mpg", x = c("wt", "disp"))
+x
+```
+
+## print.ryx()
+
+The print.ryx function displays the output of the core ryx function in a simple table.
+
+```{r}
+print(x)
+```
+
+## summary.ryx()
+
+The summary.ryx function displays the output of the core ryx function in words
+
+```{r}
+summary(x)
+```
+
+## plot.ryx()
+
+The plot.ryx function displays the output of the core ryx function in a dotchart graph
+
+```{r}
+plot(x)
+```
+
